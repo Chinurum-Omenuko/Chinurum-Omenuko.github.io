@@ -24,7 +24,17 @@ ul li
     list-style: square;
 }
 
-li:nth-child(odd)
+article li:nth-child(odd)
 {
     background-color: aqua;
+}
+
+nav li
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
 }
