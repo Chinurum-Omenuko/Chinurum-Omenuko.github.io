@@ -7,25 +7,33 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Final Project - omen0003</title>
 </head>
 <body>
     <!-- Header Area -->
     <header>
-        <img src="./images/logo.png" alt="logo">
-        <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Team</li>
-            <li>Contact</li>
-        </ul>
-        <input type="search" name="Search" id="search-bar">
+        <div class="container">
+            <div class="image container">
+                <img src="./images/logo.png" alt="logo">
+            </div>
+
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Team</li>
+                <li>Contact</li>
+            </ul>
+            <input type="search" name="Search" id="search-bar">
+        </div>   
+        
     </header>
 
     <!-- Main Section -->
     <main>
-        <img src="./images/main-banner.jpg" alt="office space">
         <div class="container">
             <div class="welcome-content">
                 <h1>Welcome to Three Star <br> Media </h1>
@@ -40,41 +48,53 @@
     <section id="about-us">
         <div class="container">
             <img src="./images/about-us.jpg" alt="table-tennis">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia vero autem culpa nesciunt placeat est. Error labore molestiae distinctio et soluta dolorum temporibus, rem, incidunt, hic dolores fugiat deserunt quisquam.</p>
+
+            <div class="content">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia vero autem culpa nesciunt placeat est. Error labore molestiae distinctio et soluta dolorum temporibus, rem, incidunt, hic dolores fugiat deserunt quisquam.</p>
+            </div>
+            
         </div>
     </section>
 
     <!-- Our Services Area -->
     <section id="our-services">
         <div class="container">
-            <h2>Our Services</h2>
+            <h2 class="h2">Our Services</h2>
             <!-- Service cards -->
-            <div class="service-card">
+            <div class="card 1">
                 <img src="./images/digital.jpg" alt="laptop and phone">
                 <h3>Digital Transformation</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vel illum hic molestias. Atque earum, itaque perspiciatis repellendus nam, odio blanditiis autem, mollitia quaerat fuga facere odit quae sequi quibusdam?</p>
                 <button>Digital Plans</button>
             </div>
-            <div class="service-card">
+
+            <div class="card 2">
                 <img src="./images/marketing.jpg" alt="laptop">
-                <h3>Marketing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus odit placeat blanditiis reprehenderit error aliquid rerum perspiciatis ipsam magnam. Asperiores reiciendis culpa dolores odio pariatur commodi quasi, ea voluptates aliquam.</p>
-                <button>Marketing Plans</button>
+
+                <div class="under">
+                    <h3>Marketing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus odit placeat blanditiis reprehenderit error aliquid rerum perspiciatis ipsam magnam. Asperiores reiciendis culpa dolores odio pariatur commodi quasi, ea voluptates aliquam.</p>
+                    <button>Marketing Plans</button>
+                </div>
+                
             </div>
-            <div class="service-card">
+
+            <div class="card 3">
                 <img src="./images/video.jpg" alt="Youtube app">
                 <h3>Video Production</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia architecto illum, officia non eum unde animi maiores quo ex quia sint distinctio, et praesentium consectetur id beatae amet laborum pariatur!</p>
                 <button>Video Plans</button>
             </div>
-            <div class="service-card">
+
+            <div class="card 4">
                 <img src="./images/web.jpg" alt="phone and notebook">
                 <h3>Web Development</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae iure magni aliquam maxime! Inventore perspiciatis quod nobis quasi corporis! Rem iste animi delectus, architecto sunt aut repellendus fugit omnis?</p>
                 <button>Web Plans</button>
             </div>
-            <div class="service-card">
+
+            <div class="card 5">
                 <img src="./images/print.jpg" alt="mailboxes">
                 <h3>Print</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ipsam reprehenderit velit deleniti id possimus consequuntur illo provident! Quasi porro fugit repudiandae, temporibus tenetur distinctio molestias deleniti expedita! Hic, ipsa?</p>
@@ -82,10 +102,10 @@
             </div>
         </div>
     </section>
+    
 
     <!-- Vision Area -->
     <article>
-        <img src="./images/vision.jpg" alt="papaer boats">
         <div class="container">
             <h3>Our Vision</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eum ratione officia eos veritatis. Deleniti commodi debitis eius accusantium nam nulla quasi id dolores placeat excepturi! Modi hic assumenda iure.</p>
@@ -97,21 +117,26 @@
     <section id="our-team">
         <div class="container">
             <h2>Our Team</h2>
-            <div class="team">
-                <img src="./images/john.jpg" alt="John's Pic">
-                <div class="team-info">
-                    <h3>John Doe</h3>
-                    <p><b>CEO and Co-owner</b></p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto molestiae atque mollitia labore quaerat veniam eius magni! Iure, laboriosam inventore qui sequi dolorum facere molestias nisi eum provident id et?</p>
+            <div class="grid-container">
+                <img id="john" src="./images/john.jpg" alt="John's Pic">
+                <div class="team1">
+                    <div class="team-info">
+                        <h3>John Doe</h3>
+                        <p><b>CEO and Co-owner</b></p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto molestiae atque mollitia labore quaerat veniam eius magni! Iure, laboriosam inventore qui sequi dolorum facere molestias nisi eum provident id et?</p>
+                    </div>
                 </div>
 
-                <img src="./images/bob.jpg" alt="Bob's Pic">
-                <div class="team-info">
-                    <h3>Bob Rite</h3>
-                    <p><b>CFO and Co-owner</b></p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto molestiae atque mollitia labore quaerat veniam eius magni! Iure, laboriosam inventore qui sequi dolorum facere molestias nisi eum provident id et?</p>
+                <img id="bob" src="./images/bob.jpg" alt="Bob's Pic">
+                <div class="team2">
+                    <div class="team-info">
+                        <h3>Bob Rite</h3>
+                        <p><b>CFO and Co-owner</b></p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto molestiae atque mollitia labore quaerat veniam eius magni! Iure, laboriosam inventore qui sequi dolorum facere molestias nisi eum provident id et?</p>
+                    </div>
                 </div>
             </div>
+            
         </div>
     </section>
 
@@ -126,10 +151,10 @@
             <form action="post">
                 
                 <label for="name">Full Name</label>
-                <input type="text">
+                <input type="text" name="Full Name">
 
                 <label for="email">Email</label>
-                <input type="text">
+                <input type="text" name="Email">
 
                 <label for="Message">Message</label>
                 <textarea name="Message Area" id="text-area" cols="30" rows="10"></textarea>
@@ -137,7 +162,7 @@
                 <button type="submit">Send</button>
             </form>
 
-            <div class="map">
+            <div class="map">s
                 <h3>Location</h3>
             </div>
         </div>
