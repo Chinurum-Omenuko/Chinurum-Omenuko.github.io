@@ -1,0 +1,238 @@
+
+header{
+    background-color: #222;
+}
+
+ul li, footer p {
+    color: #c78c06;
+}
+
+footer{
+    background-color: #222;
+}
+
+main button{
+    background-color: #c78c06;
+    color: #222;
+}
+
+section p {
+    color: black;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    background-color: #ffe6ac;
+    overflow: hidden;
+
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+    
+.under {
+padding: 20px;
+}
+
+.under h3 {
+font-size: 24px;
+margin-top: 0;
+}
+
+.under p {
+font-size: 16px;
+margin: 10px 0;
+}
+
+button {
+background-color: #222;
+color: #fff;
+border: none;
+width: 100px;
+padding: 10px 20px;
+cursor: pointer;
+}
+
+.team-info{
+    background-color: #ffe6ac;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media screen and (min-width: 760px) {
+    header .container{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header,section, main,article{
+        width: 100%;
+    }
+
+    ul li{
+        display: inline;
+        margin: 5px;
+    }
+
+    main{
+        background: url("../images/main-banner.jpg");
+        background-size: cover;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 800px;
+    }
+
+    main .container {
+        background: rgba(11, 13, 11, 0.744);
+        height: 300px;
+        position: relative;
+        top: 90px;
+    }
+    main h1,p{
+        color: white;
+    }
+
+    #about-us{
+        background-color: #ffe6ac;
+    }
+
+    #about-us .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #our-services .container{
+        display: grid;
+        grid-template-areas: 
+        "h2 h2 h2"
+        "1 2 ."
+        "3 4 5";
+    }
+
+    article{
+        background: url("../images/vision.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 400px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "john team1"
+        "team2 bob";
+    }
+
+    #our-team h2 {
+        grid-area: header;
+    }
+
+    #john{
+        grid-area: john;
+    }
+
+    .team1{
+        grid-area: team1;
+    }
+
+    #bob{
+        grid-area: bob;
+    }
+
+    .team2{
+        grid-area: team2;
+    }
+
+
+}
+
+@media screen and (max-width: 760px) {
+    h1, p {
+        color: white;
+    }
+    main, section {
+        height: 500px;
+    }
+
+    .container{
+        padding: 10px;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      border: solid 2px blue;
+    }
+  
+    .image.container img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+    }
+  
+    li {
+      margin: 10px 0;
+    }
+  
+    #search-bar {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    main {
+        background: url("../images/main-banner.jpg");
+        background-size: cover;
+        background-size: 100% 100%;
+    }
+
+    main .container {
+        background: rgba(11, 13, 11, 0.744);
+        height: 300px;
+        position: relative;
+        top: 90px;
+    }
+
+    section .container, div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #our-services {
+        background-color: #f6f6f6;
+        padding: 50px 0;
+    }
+      
+      
+    
+    
+    
+      
+
+    article {
+        height: 250px;
+        background: url("../images/vision.jpg");
+        background-size: cover;
+    }
+}
+  
